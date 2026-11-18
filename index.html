@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>iTaoBuy spreadsheet — Product Finds, Prices & Buying Guide</title>
+<meta name="description" content="Explore iTaoBuy spreadsheet research with real HipobuyFind catalog items, CNY prices, category filters, a shortlist calculator and practical QC guidance.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#123d32">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="iTaoBuy spreadsheet — Find it. Check it. Plan it.">
+<meta property="og:description" content="Real catalog references, useful product filters and a clearer buying checklist. Browse independently before you order.">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--bg:#f5f7f2;--ink:#17372d;--muted:#62736a;--green:#164f3e;--lime:#ddf39b;--line:#dce4db;--white:#fff;--radius:22px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:inherit}button,input,select{font:inherit}button,a,input,select{touch-action:manipulation}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #81a83a;outline-offset:4px}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}.skip{position:absolute;top:-100px;background:white;padding:12px;z-index:5}.skip:focus{top:10px}header{border-bottom:1px solid var(--line);background:#ffffffdf}.header{display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:84px}.brand{font-weight:850;letter-spacing:-1px;font-size:22px;text-decoration:none}.brand span{display:inline-grid;place-items:center;background:var(--green);color:var(--lime);border-radius:10px;width:34px;height:34px;margin-right:9px}nav{display:flex;gap:24px;font-size:14px}nav a{text-decoration:none}.hero{padding:75px 0 55px;display:grid;grid-template-columns:1.35fr .65fr;gap:45px;align-items:center}.eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:800;color:var(--green)}h1{font-size:clamp(42px,6.6vw,78px);line-height:1.04;letter-spacing:-3px;margin:18px 0 24px;max-width:800px}h1 span{color:#65813e}h2{font-size:clamp(27px,3.2vw,38px);letter-spacing:-1px;line-height:1.2;margin:0 0 15px}h3{line-height:1.35}.intro{max-width:650px;color:var(--muted);font-size:18px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0 18px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 22px;border-radius:100px;border:1px solid var(--green);text-decoration:none;font-weight:750;background:var(--green);color:white;cursor:pointer}.btn.alt{background:transparent;color:var(--green)}.small{font-size:13px;color:var(--muted)}.hero-note{background:var(--green);color:white;padding:32px;border-radius:var(--radius);transform:rotate(2deg)}.hero-note .eyebrow{color:var(--lime)}.hero-note strong{display:block;font-size:28px;line-height:1.25;margin:18px 0}.hero-note ol{padding-left:22px;color:#e4eee7}.hero-note li{padding:8px 0;border-bottom:1px solid #ffffff25}.strip{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-bottom:65px;background:white}.strip div{padding:19px 24px;border-right:1px solid var(--line)}.strip strong{display:block}.strip span{font-size:13px;color:var(--muted)}section{scroll-margin-top:25px}.section-head{display:flex;justify-content:space-between;gap:25px;align-items:end;margin-bottom:24px}.section-head p{max-width:690px;color:var(--muted);margin:0}.catalog{background:#edf1e8;border-radius:28px;padding:30px}.tools{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:12px;margin:25px 0 15px}label{font-size:13px;font-weight:700;display:block}input,select{width:100%;border:1px solid #ced9cc;border-radius:10px;background:white;color:var(--ink);padding:12px;margin-top:6px;min-width:0}.catalog-status{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;margin:12px 0 22px;font-size:13px;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{background:white;border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}.photo{aspect-ratio:1/1;background:#e8ebe3;position:relative}.photo img{width:100%;height:100%;object-fit:contain;display:block}.photo .tag{position:absolute;left:10px;top:10px;border-radius:20px;background:#fffffff0;padding:4px 10px;font-size:11px;font-weight:750}.card-body{padding:18px;display:flex;flex-direction:column;flex:1}.id{font-size:11px;color:var(--muted);letter-spacing:1px}.card h3{font-size:16px;margin:8px 0 12px;min-height:44px}.price{font-size:21px;font-weight:800;margin-top:auto}.card .small{display:block;margin-bottom:14px}.card-link{font-weight:750;text-decoration:none;border-bottom:1px solid var(--line);padding:8px 0}.pick{display:flex;align-items:center;gap:8px;margin-top:12px;font-size:12px;font-weight:500}.pick input{width:17px;height:17px;margin:0;accent-color:var(--green)}.empty{padding:28px;text-align:center;background:white;border-radius:14px}.shortlist{margin-top:22px;padding:20px;background:var(--green);color:white;border-radius:16px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.shortlist p{margin:0;color:#d9e9df;font-size:13px}.shortlist button{color:white;border-color:#ffffff70;background:transparent;padding:8px 16px}.section{padding:70px 0 0}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:28px}.panel{padding:27px;background:white;border:1px solid var(--line);border-radius:18px}.num{display:grid;place-items:center;width:36px;height:36px;background:var(--lime);border-radius:50%;font-weight:800}.panel p{color:var(--muted);font-size:15px}.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:16px;background:white;margin-top:25px}table{border-collapse:collapse;width:100%;min-width:600px;text-align:left}th,td{padding:16px 20px;border-bottom:1px solid var(--line);vertical-align:top}th{background:#eaf0e3;font-size:14px}td{font-size:14px}tr:last-child td{border-bottom:0}.split{display:grid;grid-template-columns:1fr 1fr;gap:24px}.checklist{padding-left:22px;color:var(--muted)}.checklist li{padding:6px 0}details{border-bottom:1px solid var(--line);padding:19px 0}summary{font-size:17px;font-weight:750;cursor:pointer}details p{max-width:900px;color:var(--muted)}.closing{margin-top:65px;padding:42px;background:var(--lime);border-radius:24px;text-align:center}.closing p{max-width:640px;margin:15px auto}.sources{font-size:13px;color:var(--muted);margin-top:25px}.sources a{overflow-wrap:anywhere}footer{margin-top:65px;padding:30px 0;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}[hidden]{display:none!important}
+@media(max-width:950px){.grid{grid-template-columns:repeat(2,1fr)}.hero{grid-template-columns:1fr}.hero-note{transform:none}.steps{grid-template-columns:1fr}.hero{padding-top:45px}h1{max-width:750px}.strip{margin-bottom:40px}}
+@media(max-width:600px){.wrap{width:calc(100% - 28px)}.header{min-height:74px;flex-wrap:wrap;padding:15px 0}nav{gap:18px;font-size:12px}.brand{font-size:18px}.hero{gap:22px;padding-bottom:30px}h1{letter-spacing:-2px}.strip{grid-template-columns:1fr}.strip div{border-right:0;border-bottom:1px solid var(--line);padding:13px 18px}.tools{grid-template-columns:1fr}.catalog{padding:17px;border-radius:20px}.grid{gap:12px}.card-body{padding:12px}.card h3{font-size:14px;min-height:58px}.price{font-size:18px}.section-head{display:block}.section{padding-top:45px}.split{grid-template-columns:1fr}.closing{padding:30px 20px}.hero-note{padding:25px}.btn{padding:12px 18px;font-size:14px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"CollectionPage",
+ "name":"iTaoBuy spreadsheet — Product Finds, Prices & Buying Guide",
+ "description":"Independent product research page with a selected HipobuyFind catalog snapshot, category filters and purchasing guidance.",
+ "inLanguage":"en",
+ "mainEntity":{
+  "@type":"ItemList",
+  "name":"Selected HipobuyFind catalog references",
+  "numberOfItems":4,
+  "itemListElement":[
+   {"@type":"ListItem","position":1,"name":"Cream Chunky Sneakers with Wide Laces","url":"https://hipobuyfind.com/goods-148191.html"},
+   {"@type":"ListItem","position":2,"name":"Fleece-Lined Hoodie","url":"https://hipobuyfind.com/goods-154917.html"},
+   {"@type":"ListItem","position":3,"name":"Graphic Short-Sleeve T-Shirt","url":"https://hipobuyfind.com/goods-154920.html"},
+   {"@type":"ListItem","position":4,"name":"Beige Quilted Drawstring Mini Backpack, Style 6302-1","url":"https://hipobuyfind.com/goods-154850.html"}
+  ]
+ }
+}
+</script>
+<!--
+index.html
+Research: relevant search results and competitor pages were reviewed. Exact Google
+first-page positions were not independently established; rankings vary by location.
+Applied improvements: server-readable catalog content, clean product names,
+source identifiers, honest snapshot dating, category/search/price filters,
+shortlist totals, cost breakdown, QC checklist and clear destination disclosure.
+Research references:
+https://www.itaobuysheets.com/
+https://chinagrails.com/en/spreadsheet/agent/itaobuy
+https://itaobuyspreadsheet.net/
+
+Deployment/indexing status: NOT submitted. No published destination URL or verified
+Google Search Console / Bing Webmaster Tools access was supplied.
+After publishing: add a self-referencing canonical for the actual public URL,
+verify ownership, publish and submit a sitemap, then request URL indexing through
+Google Search Console and Bing Webmaster Tools. HTML alone does not submit URLs.
+Do not set canonical to the external catalog destination.
+-->
+<link rel="canonical" href="https://kakobuyfinds.github.io/vycko/">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+ <div class="wrap header">
+  <a class="brand" href="https://hipobuyfind.com"><span>iT</span>Finds &amp; Fieldnotes</a>
+  <nav aria-label="Main navigation">
+   <a href="#catalog">Catalog</a>
+   <a href="#guide">Buying guide</a>
+   <a href="#faq">FAQ</a>
+  </nav>
+ </div>
+</header>
+<main id="main" class="wrap">
+ <section class="hero" aria-labelledby="hero-title">
+  <div>
+   <div class="eyebrow">Independent finds · Considered choices</div>
+   <h1 id="hero-title">iTaoBuy spreadsheet<span>.<br>Find your next pick.</span></h1>
+   <p class="intro">Browse real product references, compare item prices and prepare a better shortlist. Start with shoes, everyday layers and accessories, then check the details before placing an order.</p>
+   <div class="actions">
+    <a class="btn" href="https://hipobuyfind.com">iTaoBuy spreadsheet <span aria-hidden="true">&nbsp;↗</span></a>
+    <a class="btn alt" href="https://hipobuyfind.com">Buy it now <span aria-hidden="true">&nbsp;↗</span></a>
+   </div>
+   <p class="small">Both buttons open HipobuyFind, an external product directory. This independent page is not the official iTaoBuy website or a checkout.</p>
+  </div>
+  <aside class="hero-note" aria-label="Research workflow">
+   <div class="eyebrow">A little research goes a long way</div>
+   <strong>Find it.<br>Check it.<br>Plan the full cost.</strong>
+   <ol>
+    <li>Match the item and listing ID.</li>
+    <li>Check size, options and seller details.</li>
+    <li>Review QC and shipping before approval.</li>
+   </ol>
+   <p class="small" style="color:#d9e9df">A listing photo is a reference, not a warehouse inspection.</p>
+  </aside>
+ </section>
+ <div class="strip">
+  <div><strong>Real catalog references</strong><span>Source IDs and original listing photos</span></div>
+  <div><strong>Useful price context</strong><span>CNY item prices, separate from delivery costs</span></div>
+  <div><strong>A clearer next step</strong><span>Shortlist first, verify before paying</span></div>
+ </div>
+
+ <section id="catalog" class="catalog" aria-labelledby="catalog-title">
+  <div class="section-head">
+   <div>
+    <div class="eyebrow">The product edit</div>
+    <h2 id="catalog-title">Explore the catalog</h2>
+    <p>Selected real entries from HipobuyFind. Search this four-item preview or open the full directory for more categories.</p>
+   </div>
+   <a href="https://hipobuyfind.com" class="btn alt">Full directory ↗</a>
+  </div>
+  <div class="tools" id="tools" hidden>
+   <label>Find a product or item ID
+    <input id="search" type="search" placeholder="Try hoodie, sneakers or 154850">
+   </label>
+   <label>Category
+    <select id="category">
+     <option value="all">All categories</option>
+     <option value="Shoes">Shoes</option>
+     <option value="Hoodies">Hoodies / Sweaters</option>
+     <option value="T-Shirts">T-Shirts</option>
+     <option value="Bags">Bags</option>
+    </select>
+   </label>
+   <label>Sort products
+    <select id="sort">
+     <option value="default">Featured order</option>
+     <option value="low">Price: low to high</option>
+     <option value="high">Price: high to low</option>
+    </select>
+   </label>
+  </div>
+  <div class="catalog-status">
+   <span id="result-count" role="status" aria-live="polite">4 source-listed products</span>
+   <span>Source snapshot: 19 November 2026 · Not a live inventory feed</span>
+  </div>
+  <div class="grid" id="products">
+   <article class="card" data-category="Shoes" data-price="350" data-id="148191" data-order="0">
+    <div class="photo">
+     <img src="https://si.geilicdn.com/open1700230128-1234478995-64a0000001987b40d1cb0a8115c2_1080_1440.jpg" alt="Source listing photo for cream chunky sneakers with wide laces" width="400" height="400" loading="lazy" decoding="async">
+     <span class="tag">Shoes</span>
+    </div>
+    <div class="card-body">
+     <span class="id">ITEM 148191</span>
+     <h3>Cream Chunky Sneakers with Wide Laces</h3>
+     <div class="price">¥350.00</div>
+     <span class="small">Source-listed item price · CNY</span>
+     <a class="card-link" href="https://hipobuyfind.com/goods-148191.html">View source listing ↗</a>
+     <label class="pick" hidden><input type="checkbox" value="350"> Add to shortlist</label>
+    </div>
+   </article>
+   <article class="card" data-category="Hoodies" data-price="170" data-id="154917" data-order="1">
+    <div class="photo">
+     <img src="https://si.geilicdn.com/open1792148229-1234478995-76d100000196f413b04f0a8133b0_800_800.jpg" alt="Source listing photo for a fleece-lined hoodie" width="400" height="400" loading="lazy" decoding="async">
+     <span class="tag">Hoodies / Sweaters</span>
+    </div>
+    <div class="card-body">
+     <span class="id">ITEM 154917</span>
+     <h3>Fleece-Lined Hoodie</h3>
+     <div class="price">¥170.00</div>
+     <span class="small">Source-listed item price · CNY</span>
+     <a class="card-link" href="https://hipobuyfind.com/goods-154917.html">View source listing ↗</a>
+     <label class="pick" hidden><input type="checkbox" value="170"> Add to shortlist</label>
+    </div>
+   </article>
+   <article class="card" data-category="T-Shirts" data-price="105" data-id="154920" data-order="2">
+    <div class="photo">
+     <img src="https://si.geilicdn.com/open1792148229-1234478995-09a000000196efa4b3cc0aa0834c_800_800.jpg" alt="Source listing photo for a graphic short-sleeve T-shirt" width="400" height="400" loading="lazy" decoding="async">
+     <span class="tag">T-Shirts</span>
+    </div>
+    <div class="card-body">
+     <span class="id">ITEM 154920</span>
+     <h3>Graphic Short-Sleeve T-Shirt</h3>
+     <div class="price">¥105.00</div>
+     <span class="small">Source-listed item price · CNY</span>
+     <a class="card-link" href="https://hipobuyfind.com/goods-154920.html">View source listing ↗</a>
+     <label class="pick" hidden><input type="checkbox" value="105"> Add to shortlist</label>
+    </div>
+   </article>
+   <article class="card" data-category="Bags" data-price="340" data-id="154850" data-order="3">
+    <div class="photo">
+     <img src="https://si.geilicdn.com/pcitem901921648802-7dbe000001955a1df4c10a210349_1080_1080.jpg" alt="Source listing photo for a beige quilted drawstring mini backpack" width="400" height="400" loading="lazy" decoding="async">
+     <span class="tag">Bags</span>
+    </div>
+    <div class="card-body">
+     <span class="id">ITEM 154850 · STYLE 6302-1</span>
+     <h3>Beige Quilted Drawstring Mini Backpack</h3>
+     <div class="price">¥340.00</div>
+     <span class="small">Source-listed item price · CNY</span>
+     <a class="card-link" href="https://hipobuyfind.com/goods-154850.html">View source listing ↗</a>
+     <label class="pick" hidden><input type="checkbox" value="340"> Add to shortlist</label>
+    </div>
+   </article>
+  </div>
+  <p class="empty" id="empty" hidden>No matches in this preview. Try another term or browse the full HipobuyFind directory.</p>
+  <div class="shortlist" id="shortlist" hidden>
+   <div><strong id="total" aria-live="polite">0 selected · ¥0.00</strong><p>One unit per selected item. Excludes domestic delivery, fees, international shipping and taxes.</p></div>
+   <button class="btn" id="clear" type="button">Clear shortlist</button>
+  </div>
+  <p class="small">Product names have been shortened for readability. Prices, options and availability can change. These references do not establish authenticity, quality or iTaoBuy purchasing eligibility; check the source listing and your chosen service.</p>
+  <noscript><p>All product references remain available without JavaScript. Interactive search, filters and shortlist totals require JavaScript.</p></noscript>
+ </section>
+
+ <section id="guide" class="section">
+  <div class="eyebrow">From discovery to decision</div>
+  <h2>How to use an iTaoBuy spreadsheet</h2>
+  <p class="intro">A spreadsheet is a starting point for product research: names, photos, prices and links collected into a browsable list. The listing and the purchasing service still need separate checks.</p>
+  <div class="steps">
+   <article class="panel">
+    <span class="num">1</span><h3>Find the exact listing</h3>
+    <p>Choose a product and note its source ID. Open the HipobuyFind entry, inspect the underlying seller link and match the photos, model and options. Similar pictures can represent different listings.</p>
+   </article>
+   <article class="panel">
+    <span class="num">2</span><h3>Confirm the order details</h3>
+    <p>If you plan to use iTaoBuy, confirm that it accepts the original seller URL. Check the selected variant, size chart, current price, domestic freight and return conditions before authorizing a purchase.</p>
+   </article>
+   <article class="panel">
+    <span class="num">3</span><h3>Review before shipping</h3>
+    <p>When warehouse inspection is available, compare the received item with your order. Request measurements or closer photos where needed, then compare shipping options for your actual destination and parcel.</p>
+   </article>
+  </div>
+ </section>
+
+ <section class="section" aria-labelledby="cost-title">
+  <div class="eyebrow">Beyond the sticker price</div>
+  <h2 id="cost-title">What your item price leaves out</h2>
+  <p>The catalog shows product prices in Chinese yuan. A useful budget separates the goods from the costs of getting them to your door.</p>
+  <div class="table-wrap">
+   <table>
+    <thead><tr><th scope="col">Cost component</th><th scope="col">What to check</th><th scope="col">When to confirm</th></tr></thead>
+    <tbody>
+     <tr><td>Item and variant</td><td>The price of your chosen size, color and quantity</td><td>Before purchasing</td></tr>
+     <tr><td>Domestic shipping</td><td>Seller-to-warehouse delivery and any seller-specific charges</td><td>Before purchasing</td></tr>
+     <tr><td>Service and payment fees</td><td>Service charges, conversion rates and payment processing</td><td>Before payment</td></tr>
+     <tr><td>International freight</td><td>Destination, packed dimensions, chargeable weight and route restrictions</td><td>After parcel details are available</td></tr>
+     <tr><td>Optional services and taxes</td><td>Packaging, inspection extras, insurance and applicable destination charges</td><td>Before shipping approval</td></tr>
+    </tbody>
+   </table>
+  </div>
+  <p class="small">Example: the ¥170 hoodie plus the ¥105 T-shirt gives a ¥275 goods subtotal. That figure is not a delivered-price quote.</p>
+ </section>
+
+ <section class="section split" aria-label="Product verification checklists">
+  <article class="panel">
+   <div class="eyebrow">Fit comes first</div>
+   <h2>Check measurements</h2>
+   <ul class="checklist">
+    <li>For tops, compare chest width, body length and sleeve length with a garment you own.</li>
+    <li>For footwear, check the seller’s size chart and ask for relevant measurements if sizing is unclear.</li>
+    <li>For bags, confirm external dimensions, closure type and included straps.</li>
+    <li>Do not rely on a size label or a single photo to establish fit or materials.</li>
+   </ul>
+  </article>
+  <article class="panel">
+   <div class="eyebrow">Look beyond the listing photo</div>
+   <h2>Review QC carefully</h2>
+   <ul class="checklist">
+    <li>Match quantity, color and variant to the order record.</li>
+    <li>Check visible stitching, stains, damage, fasteners and left/right consistency.</li>
+    <li>Ask for close-ups or measurements when a detail affects your decision.</li>
+    <li>Check return deadlines before approving dispatch. Photos cannot prove durability or authenticity.</li>
+   </ul>
+  </article>
+ </section>
+
+ <section id="faq" class="section">
+  <div class="eyebrow">Before you go</div>
+  <h2>iTaoBuy spreadsheet questions</h2>
+  <details open>
+   <summary>What is an iTaoBuy spreadsheet?</summary>
+   <p>It is a product-discovery list used to research items before purchasing through a shopping service. This page provides a small, searchable HipobuyFind catalog snapshot and buying guidance; it is not an official agent spreadsheet or a downloadable Excel file.</p>
+  </details>
+  <details>
+   <summary>Where do the buttons and product links go?</summary>
+   <p>The “iTaoBuy spreadsheet” and “Buy it now” buttons both open https://hipobuyfind.com. Individual product references open their corresponding HipobuyFind pages. They do not open an iTaoBuy checkout or place an order.</p>
+  </details>
+  <details>
+   <summary>Can every item here be purchased through iTaoBuy?</summary>
+   <p>That has not been confirmed. Obtain the original seller link from the product entry and check acceptance, current restrictions and available options with iTaoBuy before paying. A spreadsheet topic in a listing title does not establish compatibility.</p>
+  </details>
+  <details>
+   <summary>Are the prices and stock updated automatically?</summary>
+   <p>No. These four entries are a dated source snapshot, not an automated inventory connection. Reopen the source listing for current variant prices and availability. The shortlist calculator uses the displayed CNY prices only.</p>
+  </details>
+  <details>
+   <summary>Are these warehouse QC photos?</summary>
+   <p>The images are original source-listing references. They have not been verified as warehouse QC photos. Inspect photos of the actual received goods through your purchasing service when that service is available.</p>
+  </details>
+  <details>
+   <summary>Does this page guarantee quality or delivery times?</summary>
+   <p>No. Product quality, seller fulfillment, returns, route availability and delivery estimates must be assessed separately. Confirm current terms with the seller and purchasing service for your order.</p>
+  </details>
+ </section>
+
+ <section class="closing">
+  <div class="eyebrow">Your next find starts here</div>
+  <h2>A better shortlist. A clearer decision.</h2>
+  <p>Explore the wider HipobuyFind directory, save the exact listing details and check the full cost before you commit.</p>
+  <div class="actions" style="justify-content:center">
+   <a class="btn" href="https://hipobuyfind.com">iTaoBuy spreadsheet ↗</a>
+   <a class="btn alt" href="https://hipobuyfind.com">Buy it now ↗</a>
+  </div>
+ </section>
+ <p class="sources">Catalog source: <a href="https://hipobuyfind.com">HipobuyFind</a>. Four selected entries and their displayed CNY prices were reviewed on 19 November 2026. This page does not claim to reproduce the complete directory or to have inspected the goods.</p>
+</main>
+<footer>
+ <div class="wrap">
+  <strong>iTaoBuy spreadsheet · Independent product research</strong>
+  <p>This website is not affiliated with or endorsed by iTaoBuy, HipobuyFind, any marketplace or any brand referenced in source listings. It does not process payments, sell products or arrange shipping. Product images are loaded from external source hosts; those hosts may receive ordinary connection data when images load.</p>
+  <p>© 2026 Finds &amp; Fieldnotes. All trademarks belong to their respective owners.</p>
+ </div>
+</footer>
+<script>
+(function(){
+"use strict";
+const grid=document.getElementById("products");
+const cards=Array.from(grid.querySelectorAll(".card"));
+const search=document.getElementById("search");
+const category=document.getElementById("category");
+const sort=document.getElementById("sort");
+const boxes=Array.from(grid.querySelectorAll('input[type="checkbox"]'));
+document.getElementById("tools").hidden=false;
+document.getElementById("shortlist").hidden=false;
+document.querySelectorAll(".pick").forEach(function(label){label.hidden=false;});
+
+function filter(){
+ const query=search.value.trim().toLocaleLowerCase();
+ const group=category.value;
+ let count=0;
+ cards.forEach(function(card){
+  const text=(card.querySelector("h3").textContent+" "+card.dataset.category+" "+card.dataset.id).toLocaleLowerCase();
+  const visible=(!query||text.includes(query))&&(group==="all"||card.dataset.category===group);
+  card.hidden=!visible;
+  if(visible) count++;
+ });
+ const ordered=cards.slice().sort(function(a,b){
+  if(sort.value==="low") return Number(a.dataset.price)-Number(b.dataset.price);
+  if(sort.value==="high") return Number(b.dataset.price)-Number(a.dataset.price);
+  return Number(a.dataset.order)-Number(b.dataset.order);
+ });
+ ordered.forEach(function(card){grid.appendChild(card);});
+ document.getElementById("result-count").textContent=count+" of "+cards.length+" products shown";
+ document.getElementById("empty").hidden=count!==0;
+}
+function total(){
+ const selected=boxes.filter(function(box){return box.checked;});
+ const sum=selected.reduce(function(value,box){return value+Number(box.value);},0);
+ document.getElementById("total").textContent=selected.length+" selected · ¥"+sum.toFixed(2);
+}
+search.addEventListener("input",filter);
+category.addEventListener("change",filter);
+sort.addEventListener("change",filter);
+boxes.forEach(function(box){box.addEventListener("change",total);});
+document.getElementById("clear").addEventListener("click",function(){
+ boxes.forEach(function(box){box.checked=false;});
+ total();
+});
+document.querySelectorAll(".photo img").forEach(function(img){
+ img.addEventListener("error",function(){
+  const note=document.createElement("span");
+  note.textContent="Source image unavailable — open the listing to view";
+  note.style.cssText="display:grid;place-items:center;height:100%;padding:25px;text-align:center;font-size:13px;color:#62736a";
+  img.replaceWith(note);
+ },{once:true});
+});
+filter();
+})();
+</script>
+</body>
+</html>
